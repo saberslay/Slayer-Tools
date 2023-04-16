@@ -1,37 +1,35 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Saberslay.SlayTools {
     public class ConsoleInGameWindow : MonoBehaviour {
 
-        static string myLog = "";
-        private string output;
-        private string stack;
+        string myLog = "*begin log";
+        string filename = "";
+        bool doShow = true;
+        int kChars = 700;
 
         bool ShowConsoleInGameWindow = false;
 
-        void OnEnable() {
-            Application.logMessageReceived += Log;
-        }
-
-        void OnDisable() {
-            Application.logMessageReceived -= Log;
-        }
-
-        void Update() {
-            if (Debug.isDebugBuild) {
-                if (Input.GetKeyDown(KeyCode.Tilde)) {
-                    ShowConsoleInGameWindow = !ShowConsoleInGameWindow; 
-                }
-            }
-        }
+        void OnEnable() { Application.logMessageReceived += Log; }
+        void OnDisable() { Application.logMessageReceived -= Log; }
+        void Update() { if (Input.GetKeyDown(KeyCode.BackQuote)) { ShowConsoleInGameWindow = !ShowConsoleInGameWindow; }}
 
         public void Log(string logString, string stackTrace, LogType type) {
-            output = logString;
-            stack = stackTrace;
-            myLog = output + "\n" + myLog;
-            if (myLog.Length > 5000) {
-                myLog = myLog.Substring(0, 4000);
+            // for on screen...
+            myLog = myLog + "\n" + logString;
+            if (myLog.Length > kChars) { myLog = myLog.Substring(myLog.Length - kChars); }
+
+            // for the file ...
+            if (filename == "") {
+                string d = System.Environment.GetFolderPath(
+                   System.Environment.SpecialFolder.Desktop) + "/YOUR_LOGS";
+                System.IO.Directory.CreateDirectory(d);
+                string r = UnityEngine.Random.Range(1000, 9999).ToString();
+                filename = d + "/log-" + r + ".txt";
             }
+            try { System.IO.File.AppendAllText(filename, logString + "\n"); }
+            catch { }
         }
 
         void OnGUI() {
