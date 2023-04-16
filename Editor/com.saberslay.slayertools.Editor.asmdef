@@ -1,0 +1,15 @@
+{
+    "name": "com.saberslay.slayertools.Editor",
+    "references": [
+        "GUID:57ee50a981bee014aa7bc1e7f2e766b2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

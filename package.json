@@ -1,0 +1,17 @@
+{
+  "name": "com.saberslay.slayertools",
+  "version": "1.0.0",
+  "displayName": "Slayer Tools",
+  "changelogUrl": "https://github.com/saberslay/Slayer-Tools/blob/main/.CHANGELOG",
+  "licensesUrl": "https://github.com/saberslay/Slayer-Tools/blob/main/LICENSE",
+  "keywords": [
+    "tool",
+    "saberslay"
+  ],
+  "author": {
+    "name": "saberslay",
+    "email": "saberslay@saberslay.com",
+    "url": "https://github.com/saberslay/Slayer-Tools"
+  },
+  "type": "tool"
+}
