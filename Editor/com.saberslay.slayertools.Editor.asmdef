@@ -1,5 +1,6 @@
 {
-    "name": "com.saberslay.slayertools.Editor",
+    "name": "slayertools.Editor",
+    "rootNamespace": "Saberslay.SlayTools.Editor",
     "references": [
         "GUID:57ee50a981bee014aa7bc1e7f2e766b2"
     ],

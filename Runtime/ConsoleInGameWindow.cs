@@ -1,12 +1,10 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Saberslay.SlayTools {
     public class ConsoleInGameWindow : MonoBehaviour {
 
         string myLog = "*begin log";
         string filename = "";
-        bool doShow = true;
         int kChars = 700;
 
         bool ShowConsoleInGameWindow = false;

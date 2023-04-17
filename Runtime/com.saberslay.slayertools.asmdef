@@ -1,3 +1,14 @@
-﻿{
-	"name": "com.saberslay.slayertools"
+{
+    "name": "com.saberslay.slayertools",
+    "rootNamespace": "Saberslay.SlayTools",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

@@ -17,9 +17,13 @@ namespace Saberslay.SlayTools.Editor.EditorTools {
         }
         [MenuItem("Slayer Tools/Console In Game Window")]
         static void ConsoleInGameWindow() {
-            GameObject go = new GameObject("Console In Game Window");
-            go.transform.position = new Vector3(0, 0, 0);
-            go.AddComponent(typeof(ConsoleInGameWindow));
+            if (GameObject.Find("Console In Game Window")) {
+                Debug.LogWarning("There can only be one");
+            } else {
+                GameObject go = new GameObject("Console In Game Window");
+                go.transform.position = new Vector3(0, 0, 0);
+                go.AddComponent(typeof(ConsoleInGameWindow));
+            }
         }
     }
 }
