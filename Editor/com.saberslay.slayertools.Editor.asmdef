@@ -1,8 +1,9 @@
 {
-    "name": "slayertools.Editor",
-    "rootNamespace": "Saberslay.SlayTools.Editor",
+    "name": "slayertools.editor",
+    "rootNamespace": "Saberslay.SlayTools.editor",
     "references": [
-        "GUID:57ee50a981bee014aa7bc1e7f2e766b2"
+        "GUID:57ee50a981bee014aa7bc1e7f2e766b2",
+        "GUID:60af65d1eccca3640882a75eb78fca38"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Saberslay.SlayTools.Editor.EditorTools {
+namespace Saberslay.SlayTools.editor.EditorTools {
     public class EditorTools : EditorWindow {
         [MenuItem("Slayer Tools/Create Parent For Selected")]
         static void CreateParentForSelected() {

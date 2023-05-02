@@ -1,9 +1,7 @@
 {
-    "name": "com.saberslay.slayertools",
-    "rootNamespace": "Saberslay.SlayTools",
-    "references": [
-        "GUID:60af65d1eccca3640882a75eb78fca38"
-    ],
+    "name": "com.saberslay.slayertools.helperfunctions",
+    "rootNamespace": "Saberslay.SlayTools.HelperFunctions",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
