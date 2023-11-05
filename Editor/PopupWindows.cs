@@ -19,6 +19,7 @@ namespace Saberslay.SlayTools.editor.PopupWindows
             HelperFunctions.Button.linkButton(110, 20, "Buy me a Coffee", "https://ko-fi.com/saberslay");
             EditorGUILayout.LabelField("If you went to                    ", EditorStyles.wordWrappedLabel);
             EditorGUILayout.EndHorizontal();
+
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("If you like to help me out in the development in this tool", EditorStyles.wordWrappedLabel);
             HelperFunctions.Button.linkButton(110, 20, "Github", "https://github.com/saberslay/Slayer-Tools");

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Saberslay.SlayTools.editor.EditorTools {
     public class EditorTools : EditorWindow {
-        [MenuItem("Slayer Tools/Create Parent For Selected")]
+        [MenuItem("Slayer Tools/Create Parent For Selected Items")]
         static void CreateParentForSelected() {
             if (Selection.gameObjects.Length >= 1) {
                 foreach (GameObject obj in Selection.gameObjects) {

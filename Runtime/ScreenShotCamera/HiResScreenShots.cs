@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Saberslay.SlayTools {
     public class HiResScreenShots : MonoBehaviour {
-        public int resWidth = 2550;
-        public int resHeight = 3300;
+        public int resWidth = 1920;
+        public int resHeight = 1080;
 
         private bool takeHiResShot = false;
         public static string ScreenShotName(int width, int height) {

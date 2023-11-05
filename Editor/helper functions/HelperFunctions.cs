@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using UnityEditor;
 using UnityEngine;
 
 namespace Saberslay.SlayTools.HelperFunctions {
@@ -8,13 +7,6 @@ namespace Saberslay.SlayTools.HelperFunctions {
             if (GUILayout.Button(title, GUILayout.Width(Width), GUILayout.Height(Height))) {
                 Application.OpenURL(link);
             }
-        }
-    }
-    public class Directory {
-        public static string CreateFolder(string FolderName) {
-            string guid = AssetDatabase.CreateFolder("Assets", $"{FolderName}");
-            string newFolderPath = AssetDatabase.GUIDToAssetPath(guid);
-            return newFolderPath;
         }
     }
     public class Timer {
